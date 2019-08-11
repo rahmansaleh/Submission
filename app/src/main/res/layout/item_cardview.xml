@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        app:cardCornerRadius="4dp">
+
+    <android.support.constraint.ConstraintLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+        <ImageView
+                android:id="@+id/iv_item_photo"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@color/colorAccent"
+                android:layout_width="180dp"
+                android:layout_height="180dp"/>
+
+        <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:text="@string/nama_produk"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/iv_item_photo"
+                app:layout_constraintStart_toEndOf="@id/iv_item_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_item_tag"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:text="@string/tag_produk"
+                android:ellipsize="end"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@id/tv_item_name"
+                app:layout_constraintStart_toEndOf="@id/iv_item_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btn_detail"
+                android:text="Detail"
+                android:textAllCaps="false"
+                android:textColor="@color/md_green_400"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:drawableLeft="@android:drawable/ic_menu_zoom"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_item_photo"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
