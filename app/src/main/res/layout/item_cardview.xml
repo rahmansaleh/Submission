@@ -58,16 +58,71 @@
                 android:id="@+id/btn_detail"
                 android:text="Detail"
                 android:textAllCaps="false"
-                android:textColor="@color/md_green_400"
+                android:textColor="@color/colorWhite"
                 android:textSize="15sp"
-                android:textStyle="bold"
                 android:drawableLeft="@android:drawable/ic_menu_zoom"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/iv_item_photo"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ll_sold_product"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
+        <LinearLayout
+                android:id="@+id/ll_seen_product"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                app:layout_constraintStart_toEndOf="@id/iv_item_photo"
+                app:layout_constraintTop_toTopOf="@id/btn_detail"
+                app:layout_constraintBottom_toBottomOf="@id/btn_detail"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_seen_96_black"
+                    android:tint="@color/colorPrimary"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            <TextView
+                    android:id="@+id/tv_item_seen"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_sold_product"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                app:layout_constraintStart_toEndOf="@id/ll_seen_product"
+                app:layout_constraintTop_toTopOf="@id/btn_detail"
+                app:layout_constraintBottom_toBottomOf="@id/btn_detail"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+                    android:src="@drawable/ic_sold_96_black"
+                    android:tint="@color/colorPrimary"
+                    android:layout_width="16dp"
+                    android:layout_height="20dp"/>
+
+            <TextView
+                    android:id="@+id/tv_item_sold"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>
 
