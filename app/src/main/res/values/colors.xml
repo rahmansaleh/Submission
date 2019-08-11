@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#1B5E20</color>
     <color name="colorAccent">#00C853</color>
 
+    <color name="colorWhite">#FFFFFF</color>
+
     <!-- green -->
     <color name="md_green_50">#E8F5E9</color>
     <color name="md_green_100">#C8E6C9</color>
