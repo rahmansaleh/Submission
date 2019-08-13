@@ -7,5 +7,45 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    
+    <style name="TextContent" parent="@style/TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/activity_horizontal_margin</item>
+    </style>
+    
+    <style name="TextContent.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="TextContent.Title.Black">
+        <item name="android:textColor">@color/md_black_1000</item>
+    </style>
+
+    <style name="TextContent.Title.White">
+        <item name="android:textColor">@color/md_white_1000</item>
+    </style>
+
+    <style name="TextContent.Subtitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/md_grey_600</item>
+    </style>
+
+    <style name="TextContent.Body">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextContent.Body.Black">
+        <item name="android:textColor">@color/md_black_1000</item>
+    </style>
+
+    <style name="TextContent.Body.White">
+        <item name="android:textColor">@color/md_white_1000</item>
+    </style>
 
 </resources>
