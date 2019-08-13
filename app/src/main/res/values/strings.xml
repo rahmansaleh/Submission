@@ -2,4 +2,9 @@
     <string name="app_name">Submission</string>
     <string name="tag_produk">Tag produk</string>
     <string name="nama_produk">Nama Produk</string>
+    <string name="deskripsi">The vivo Z1Pro is yet another entrant in the absolute jam-packed budget mid-range smartphone segment. Currently dominated by the Xiaomi Redmi Note 7 Pro, the Z1Pro tried to beat Xiaomi at its own game by offering even more value at a similar price point.</string>
+    <string name="display_type">IPS LCD</string>
+    <string name="display_size">6.53-inch</string>
+    <string name="display_resulotion">2340x1080 resolution</string>
+    <string name="spesifikasi">Spesifikasi</string>
 </resources>
