@@ -1,5 +1,6 @@
 package com.example.submission
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.ActionBar
@@ -40,12 +41,12 @@ class MainActivity : AppCompatActivity() {
 
         cardViewHeroAdapter.setOnItemClickCallBack(object : CardViewProductAdapter.OnItemClickCallBack{
             override fun onItemClicked(data: Product) {
-                showSelectedHero(data)
+                moveActivity(data)
             }
         })
     }
 
-    private fun showSelectedHero(product: Product) {
-        Toast.makeText(this, product.title, Toast.LENGTH_SHORT).show()
+    private fun moveActivity(product: Product) {
+        startActivity(Intent(this, DetailProduct::class.java))
     }
 }
