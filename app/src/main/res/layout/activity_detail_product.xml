@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -6,5 +7,392 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".DetailProduct">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:src="@color/colorPrimary"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            style="@style/TextContent.Title.Black"
+                            android:text="Title"
+                            android:textSize="36sp"/>
+
+                    <LinearLayout
+                            android:weightSum="4"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            <ImageView
+                                    android:id="@+id/iv_display"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:src="@mipmap/ic_launcher"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"/>
+
+                            <TextView
+                                    android:id="@+id/tv_display"
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textSize="14sp"
+                                    android:text="5.0"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            <ImageView
+                                    android:id="@+id/iv_camera"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:src="@mipmap/ic_launcher"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"/>
+
+                            <TextView
+                                    android:id="@+id/tv_camera"
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textSize="14sp"
+                                    android:text="13MP"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            <ImageView
+                                    android:id="@+id/iv_ram"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:src="@mipmap/ic_launcher"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"/>
+
+                            <TextView
+                                    android:id="@+id/tv_ram"
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textSize="14sp"
+                                    android:text="2GB RAM"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            <ImageView
+                                    android:id="@+id/iv_battery"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:src="@mipmap/ic_launcher"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"/>
+
+                            <TextView
+                                    android:id="@+id/tv_battery"
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textSize="14sp"
+                                    android:text="3120mAh"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                            style="@style/TextContent.Body.Black"
+                            android:layout_marginVertical="@dimen/activity_vertical_margin"
+                            android:text="@string/deskripsi"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                    style="@style/TextContent.Title.Black"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="@string/spesifikasi"/>
+
+            <TableLayout
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TableRow
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            style="@style/TextContent.Title.Black"
+                            android:text="Launch"/>
+
+                    <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <TableRow
+                                android:layout_weight="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="4"
+                                    android:text="Announced"/>
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="6"
+                                    android:textColor="@color/md_blue_grey_800"
+                                    android:text="2016, November"/>
+
+                        </TableRow>
+
+                        <TableRow
+                                android:layout_weight="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="4"
+                                    android:text="Status"/>
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="6"
+                                    android:textColor="@color/md_blue_grey_800"
+                                    android:text="Available. Released 2016, November"/>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            style="@style/TextContent.Title.Black"
+                            android:text="Display"/>
+
+                    <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <TableRow
+                                android:layout_weight="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="4"
+                                    android:text="Type"/>
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="6"
+                                    android:textColor="@color/md_blue_grey_800"
+                                    android:text="@string/display_type"/>
+
+                        </TableRow>
+
+                        <TableRow
+                                android:layout_weight="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="4"
+                                    android:text="Size"/>
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="6"
+                                    android:textColor="@color/md_blue_grey_800"
+                                    android:text="@string/display_size"/>
+
+                        </TableRow>
+
+                        <TableRow
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="4"
+                                    android:text="Resolution"/>
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="6"
+                                    android:textColor="@color/md_blue_grey_800"
+                                    android:text="@string/display_resulotion"/>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            style="@style/TextContent.Title.Black"
+                            android:text="Platform"/>
+
+                    <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <TableRow
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="4"
+                                    android:text="OS"/>
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="6"
+                                    android:textColor="@color/md_blue_grey_800"
+                                    android:text="@string/display_type"/>
+
+                        </TableRow>
+
+                        <TableRow
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="4"
+                                    android:text="Chipset"/>
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="6"
+                                    android:textColor="@color/md_blue_grey_800"
+                                    android:text="@string/display_size"/>
+
+                        </TableRow>
+
+                        <TableRow
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="4"
+                                    android:text="GPU"/>
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="6"
+                                    android:textColor="@color/md_blue_grey_800"
+                                    android:text="@string/display_resulotion"/>
+
+                        </TableRow>
+
+                        <TableRow
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="4"
+                                    android:text="CPU"/>
+
+                            <TextView
+                                    style="@style/TextContent.Body.Black"
+                                    android:layout_weight="6"
+                                    android:textColor="@color/md_blue_grey_800"
+                                    android:text="@string/display_resulotion"/>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
