@@ -10,6 +10,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import com.example.submission.Adapter.CardViewProductAdapter
+import com.example.submission.model.Parcelable.ProductParcel
 import com.example.submission.model.Product
 import com.example.submission.model.ProductData
 
@@ -59,12 +60,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun moveActivity(product: Product) {
-        startActivity(Intent(this, DetailProduct::class.java))
+
+        val intent = Intent(this@MainActivity, DetailProduct::class.java)
+        val bundle = Bundle()
+        val productParcel = ProductParcel(product.img, product.title, product.tag, product.count_seen, product.cuont_sold)
+
+        bundle.putParcelable("productParcel", productParcel)
+        intent.putExtra("bundle", bundle)
+
+        startActivity(intent)
     }
 
     private fun setMode(id: Int) {
         when(id) {
             R.id.nav_aboutus -> {
+
                 startActivity(Intent(this@MainActivity, AboutUs::class.java))
             }
         }
