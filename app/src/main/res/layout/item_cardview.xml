@@ -56,11 +56,10 @@
 
         <Button
                 android:id="@+id/btn_detail"
-                android:text="Detail"
-                android:textAllCaps="false"
+                android:text="detail"
+                android:textAllCaps="true"
                 android:textColor="@color/colorWhite"
-                android:textSize="15sp"
-                android:drawableLeft="@android:drawable/ic_menu_zoom"
+                android:textSize="13sp"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_marginEnd="@dimen/activity_horizontal_margin"
