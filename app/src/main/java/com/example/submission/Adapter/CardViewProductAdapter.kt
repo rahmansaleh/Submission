@@ -32,17 +32,17 @@ class CardViewProductAdapter(private val listProduct: ArrayList<Product>) : Recy
     }
 
     override fun onBindViewHolder(p0: CardViewHolder, p1: Int) {
-        val(image, title, tag, count_seen, count_sold) = listProduct[p1]
+//        val(image, title, tag, count_seen, count_sold) = listProduct[p1]
 
         Glide.with(p0.itemView.context)
-            .load(image)
+            .load(listProduct[p1].img)
             .apply(RequestOptions().override(180, 180))
             .into(p0.imgProduct)
 
-        p0.tvName.text = title
-        p0.tvTag.text = tag
-        p0.tvProductSeen.text = count_seen
-        p0.tvProductSold.text = count_sold
+        p0.tvName.text = listProduct[p1].title
+        p0.tvTag.text = listProduct[p1].tag
+        p0.tvProductSeen.text = listProduct[p1].count_seen
+        p0.tvProductSold.text = listProduct[p1].cuont_sold
 
         p0.btnDetail.setOnClickListener {
             onItemClickCallBack.onItemClicked(listProduct[p1])
