@@ -23,6 +23,7 @@
                     android:layout_height="wrap_content">
 
                 <ImageView
+                        android:id="@+id/iv_product"
                         android:src="@color/colorPrimary"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
@@ -35,6 +36,7 @@
                         android:layout_height="wrap_content">
 
                     <TextView
+                            android:id="@+id/tv_title"
                             style="@style/TextContent.Title.Black"
                             android:text="Title"
                             android:textSize="36sp"/>
@@ -154,6 +156,7 @@
                     </LinearLayout>
 
                     <TextView
+                            android:id="@+id/tv_description"
                             style="@style/TextContent.Body.Black"
                             android:layout_marginVertical="@dimen/activity_vertical_margin"
                             android:text="@string/deskripsi"/>
@@ -199,6 +202,7 @@
                                     android:text="Announced"/>
 
                             <TextView
+                                    android:id="@+id/tv_announcedlaunch"
                                     style="@style/TextContent.Body.Black"
                                     android:layout_weight="6"
                                     android:textColor="@color/md_blue_grey_800"
@@ -216,6 +220,7 @@
                                     android:text="Status"/>
 
                             <TextView
+                                    android:id="@+id/tv_statuslaunch"
                                     style="@style/TextContent.Body.Black"
                                     android:layout_weight="6"
                                     android:textColor="@color/md_blue_grey_800"
@@ -251,6 +256,7 @@
                                     android:text="Type"/>
 
                             <TextView
+                                    android:id="@+id/tv_typesdisplay"
                                     style="@style/TextContent.Body.Black"
                                     android:layout_weight="6"
                                     android:textColor="@color/md_blue_grey_800"
@@ -268,6 +274,7 @@
                                     android:text="Size"/>
 
                             <TextView
+                                    android:id="@+id/tv_sizedisplay"
                                     style="@style/TextContent.Body.Black"
                                     android:layout_weight="6"
                                     android:textColor="@color/md_blue_grey_800"
@@ -286,6 +293,7 @@
                                     android:text="Resolution"/>
 
                             <TextView
+                                    android:id="@+id/tv_resolutiondisplay"
                                     style="@style/TextContent.Body.Black"
                                     android:layout_weight="6"
                                     android:textColor="@color/md_blue_grey_800"
@@ -321,6 +329,7 @@
                                     android:text="OS"/>
 
                             <TextView
+                                    android:id="@+id/tv_osplatform"
                                     style="@style/TextContent.Body.Black"
                                     android:layout_weight="6"
                                     android:textColor="@color/md_blue_grey_800"
@@ -339,6 +348,7 @@
                                     android:text="Chipset"/>
 
                             <TextView
+                                    android:id="@+id/tv_chipsetdisplay"
                                     style="@style/TextContent.Body.Black"
                                     android:layout_weight="6"
                                     android:textColor="@color/md_blue_grey_800"
@@ -357,6 +367,7 @@
                                     android:text="GPU"/>
 
                             <TextView
+                                    android:id="@+id/tv_cpuplatform"
                                     style="@style/TextContent.Body.Black"
                                     android:layout_weight="6"
                                     android:textColor="@color/md_blue_grey_800"
@@ -375,6 +386,7 @@
                                     android:text="CPU"/>
 
                             <TextView
+                                    android:id="@+id/tv_gpuplatform"
                                     style="@style/TextContent.Body.Black"
                                     android:layout_weight="6"
                                     android:textColor="@color/md_blue_grey_800"
