@@ -9,6 +9,7 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.submission.model.Parcelable.ProductParcel
+import kotlinx.android.synthetic.main.activity_detail_product.*
 
 class DetailProduct : AppCompatActivity() {
 
@@ -23,9 +24,10 @@ class DetailProduct : AppCompatActivity() {
         val iv_product: ImageView = findViewById(R.id.iv_product)
         val tv_title: TextView = findViewById(R.id.tv_title)
         val tv_description: TextView = findViewById(R.id.tv_description)
+        val tv_tags: TextView = findViewById(R.id.tv_tags)
         val tv_display: TextView = findViewById(R.id.tv_display)
         val tv_camera: TextView = findViewById(R.id.tv_camera)
-        val iv_ram: TextView = findViewById(R.id.tv_ram)
+        val tv_ram: TextView = findViewById(R.id.tv_ram)
         val tv_battery: TextView = findViewById(R.id.tv_battery)
         val tv_announcedlaunch: TextView = findViewById(R.id.tv_announcedlaunch)
         val tv_statuslaunch: TextView = findViewById(R.id.tv_statuslaunch)
@@ -44,9 +46,11 @@ class DetailProduct : AppCompatActivity() {
 
         tv_title.text = productParcel.title
         tv_description.text = productParcel.description
+        tv_tags.text = productParcel.tag
         tv_display.text = productParcel.size_display
         tv_camera.text = productParcel.camera
         tv_battery.text = productParcel.battery
+        tv_ram.text = productParcel.ram
         tv_announcedlaunch.text = productParcel.announced_launch
         tv_statuslaunch.text = productParcel.status_launch
         tv_typesdisplay.text = productParcel.type_display
