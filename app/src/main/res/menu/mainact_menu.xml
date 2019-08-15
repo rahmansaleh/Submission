@@ -6,6 +6,5 @@
             android:id="@+id/nav_aboutus"
             android:title="AboutUs"
             app:showAsAction="always"
-            android:icon="@drawable/ic_black_person_96"
-            android:iconTint="@color/md_white_1000"/>
+            android:icon="@drawable/ic_white_person_96"/>
 </menu>
