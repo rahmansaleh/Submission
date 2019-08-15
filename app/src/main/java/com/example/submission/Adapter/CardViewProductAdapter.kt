@@ -40,7 +40,7 @@ class CardViewProductAdapter(private val listProduct: ArrayList<Product>) : Recy
             .into(p0.imgProduct)
 
         p0.tvName.text = listProduct[p1].title
-        p0.tvTag.text = listProduct[p1].tag
+        p0.tvTag.text = listProduct[p1].description
         p0.tvProductSeen.text = listProduct[p1].count_seen
         p0.tvProductSold.text = listProduct[p1].cuont_sold
 
