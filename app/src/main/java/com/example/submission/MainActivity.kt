@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
         val intent = Intent(this@MainActivity, DetailProduct::class.java)
         val bundle = Bundle()
-        val productParcel = ProductParcel(product.img, product.title, product.tag, product.count_seen, product.cuont_sold)
+        val productParcel = ProductParcel(product.img, product.title, product.description, product.tag, product.count_seen, product.count_seen, product.schreen_size, product.camera, product.ram, product.battery, product.announced_launch, product.status_launch, product.type_display, product.size_display, product.resolution_display, product.os_platform, product.chipset_platform, product.gpu_platform, product.cpu_platform)
 
         bundle.putParcelable("productParcel", productParcel)
         intent.putExtra("bundle", bundle)
