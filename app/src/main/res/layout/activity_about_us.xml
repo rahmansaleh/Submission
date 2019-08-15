@@ -13,8 +13,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:src="@color/colorAccent"
-            android:layout_width="240dp"
-            android:layout_height="240dp"/>
+            android:layout_width="180dp"
+            android:layout_height="180dp" />
 
     <TextView
             android:id="@+id/tv_name"
