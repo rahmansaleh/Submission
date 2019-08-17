@@ -47,6 +47,10 @@ class CardViewProductAdapter(private val listProduct: ArrayList<Product>) : Recy
         p0.btnDetail.setOnClickListener {
             onItemClickCallBack.onItemClicked(listProduct[p1])
         }
+
+        p0.itemView.setOnClickListener {
+            onItemClickCallBack.onItemClicked(listProduct[p1])
+        }
     }
 
     inner class CardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
